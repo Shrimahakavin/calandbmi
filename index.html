@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Healthify</title>
+  <link rel="stylesheet" href="main.css"> <!-- Link to your external CSS file -->
+</head>
+<body>
+  <header>
+    <h1>Healthify</h1>
+    <nav>
+            <li><a href="#" id="bmi-btn">BMI Calculator</a></li>
+            <li><a href="calorie.html" id="calorie-btn">Calorie Calculator</a></li>
+    </nav>
+  </header>
+
+  <main>
+    <!-- BMI Section -->
+    <section id="bmi-section">
+      <div class="form-container">
+        <p><center><b>BMI CALCULATOR</b></center></p>
+        <form id="bmiForm">
+          <label for="age">Age (in years):</label>
+          <input type="number" id="age" name="age" placeholder="Enter your age" min="0" required>
+          
+          <label for="height">Height (in cm):</label>
+          <input type="number" id="height" name="height" placeholder="Enter your height" min="0" required>
+          
+          <label for="weight">Weight (in kg):</label>
+          <input type="number" id="weight" name="weight" placeholder="Enter your weight" min="0" required>
+          
+          <label>Gender:</label>
+          <div class="gender-container">
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">Female</label>
+          </div>
+
+          <label for="activity-level">Activity Level:</label>
+          <select id="activity-level" required>
+            <option value="1.2">Sedentary (little to no exercise)</option>
+            <option value="1.375">Lightly active (1-3 days per week)</option>
+            <option value="1.55">Moderately active (3-5 days per week)</option>
+            <option value="1.725">Very active (6-7 days per week)</option>
+            <option value="1.9">Super active (hard exercise & physical job)</option>
+          </select>
+          
+          <div class="button-container">
+            <input type="submit" value="Calculate BMI">
+          </div>
+        </form>
+        <p id="bmi-result"></p> <!-- Display BMI result here -->
+        <div id="diet-check-container" style="display: none;">
+          <button id="check-diet-btn">Check for Diet Plans</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Plan Selection Form -->
+    <section id="plan-selection-form" class="form-container" style="display: none;">
+      <p><b>Select Your Plan</b></p>
+      <form id="planForm">
+        <label for="plan-choice">Do you need a Diet Plan or Exercise Plan?</label>
+        <select id="plan-choice" required>
+          <option value="" disabled selected>Select an option</option>
+          <option value="diet">Diet Plan</option>
+          <option value="exercise">Exercise Plan</option>
+        </select>
+        <div id="meal-selection" style="display: none;">
+          <label for="meal-choice">Choose your meal:</label>
+          <select id="meal-choice">
+            <option value="" disabled selected>Select a meal</option>
+            <option value="breakfast">Breakfast</option>
+            <option value="lunch">Lunch</option>
+            <option value="snacks">Snacks</option>
+            <option value="dinner">Dinner</option>
+          </select>
+        </div>
+        <div class="button-container">
+          <button type="submit">Go to Plan</button>
+        </div>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Awesome Website. All rights reserved.</p>
+  </footer>
+
+  <script src="main.js"></script> <!-- Link to your external JavaScript file -->
+</body>
+</html>

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diet Plan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Diet Plan</h1>
+        <nav>
+            <ul>
+                <li><a href="#exercise">Exercise</a></li>
+                <li><a href="#breakfast">Breakfast</a></li>
+                <li><a href="#lunch">Lunch</a></li>
+                <li><a href="#dinner">Dinner</a></li>
+                <li><a href="#snack">Snack</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="breakfast" class="meal-section">
+            <div class="section-container">
+                <h2 class="section-title">Breakfast</h2>
+                <div class="meal-container">
+                    <div class="meal">
+                        <h3>Idli(2ps) with sambar and coconut chutney<br>
+                            <span class="nutrient-info">Calorie: 350 kcal | Protein: 9g | Fiber: 5g</span>
+                        </h3>
+                        <button onclick="showRecipe('idli_sambar')">Recipe</button>
+                        <div id="idli_sambar" class="recipe-content"></div>
+                    </div>
+                    <div class="meal">
+                        <h3>Dosai(2pcs) with sambar and molaga podi<br>
+                            <span class="nutrient-info">Calorie: 380 kcal | Protein: 8g | Fiber: 4g</span>
+                        </h3>
+                        <button onclick="showRecipe('dosai')">Recipe</button>
+                        <div id="dosai" class="recipe-content"></div>
+                    </div>
+                    <div class="meal">
+                        <h3>Upma(Gothuma rava upma with vegetables)<br>
+                            <span class="nutrient-info">Calorie: 360 kcal | Protein: 7g | Fiber: 5g</span>
+                        </h3>
+                        <button onclick="showRecipe('upma')">Recipe</button>
+                        <div id="upma" class="recipe-content"></div>
+                    </div>
+                    <div class="meal">
+                        <h4>Kothu Idiyapam(Steamed rice noodles with veggies and spices)<br>
+                            <span class="nutrient-info">Calorie: 370 kcal | Protein: 4.5g | Fiber: 5g</span>
+                        </h4>
+                        <button onclick="showRecipe('idiyapam')">Recipe</button>
+                        <div id="idiyapam" class="recipe-content"></div>
+                    </div>
+                    <div class="meal">
+                        <h3>Pongal<br>
+                            <span class="nutrient-info">Calorie: 390 kcal | Protein: 10g | Fiber: 6g</span>
+                        </h3>
+                        <button onclick="showRecipe('pongal')">Recipe</button>
+                        <div id="pongal" class="recipe-content"></div>
+                    </div>
+                    <div class="meal">
+                        <h3>Pesarattu(Green gram dosai) 2pcs<br>
+                            <span class="nutrient-info">Calorie: 370 kcal | Protein: 11g | Fiber: 7g</span>
+                        </h3>
+                        <button onclick="showRecipe('pesarattu')">Recipe</button>
+                        <div id="pesarattu" class="recipe-content"></div>
+                    </div>
+                    <div class="meal">
+                        <h3>Uttapam 2pcs<br><br>
+                            <span class="nutrient-info">Calorie: 400 kcal | Protein: 9g | Fiber: 5g</span>
+                        </h3>
+                        <button onclick="showRecipe('uttapam')">Recipe</button>
+                        <div id="uttapam" class="recipe-content"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="lunch" class="meal-section">
+            <div class="section-container">
+                <h2 class="section-title">Lunch</h2>
+                <div class="meal-container">
+                    <div class="meal">
+                        <h3>Brown Rice & Sambar<br>
+                            <span class="nutrient-info">Calorie: 450 kcal | Protein: 12g | Fiber: 8g</span>
+                        </h3>
+                        <button onclick="showRecipe('brown_rice_sambar')">Recipe</button>
+                        <div id="brown_rice_sambar" class="recipe-content"></div>
+                    </div>
+                    <div class="meal">
+                        <h3>Rasam Sadham with Kootu and Sundal<br>
+                            <span class="nutrient-info">Calorie: 430 kcal | Protein: 11g | Fiber: 7g</span>
+                        </h3>
+                        <button onclick="showRecipe('rasam_sadham')">Recipe</button>
+                        <div id="rasam_sadham" class="recipe-content"></div>
+                    </div>
+                    <div class="meal">
+                        <h3>Thalicha Sadham(Tempered rice with keerai poriyal) and buttermilk(mor)<br>
+                            <span class="nutrient-info">Calorie: 440 kcal | Protein: 10g | Fiber: 6g</span>
+                        </h3>
+                        <button onclick="showRecipe('thalicha_sadham')">Recipe</button>
+                        <div id="thalicha_sadham" class="recipe-content"></div>
+                    </div>
+                    <div class="meal">
+                        <h3>Vatha kulambu with brown rice and Beans poriyal and buttermilk(mor)<br>
+                            <span class="nutrient-info">Calorie: 460 kcal | Protein: 10g | Fiber: 7g</span>
+                        </h3>
+                        <button onclick="showRecipe('vatha_kulambu')">Recipe</button>
+                        <div id="vatha_kulambu" class="recipe-content"></div>
+                    </div>
+                    <div class="meal">
+                        <h3>Curd rice with carrot and pomegranate(1cup) and sundal<br>
+                            <span class="nutrient-info">Calorie: 380 kcal | Protein: 8g | Fiber: 4g</span>
+                        </h3>
+                        <button onclick="showRecipe('curd_rice')">Recipe</button>
+                        <div id="curd_rice" class="recipe-content"></div>
+                    </div>
+                    <div class="meal">
+                        <h3>Vegetable Kootu with Steamed rice and pickle<br>
+                            <span class="nutrient-info">Calorie: 470 kcal | Protein: 12g | Fiber: 8g</span>
+                        </h3>
+                        <button onclick="showRecipe('vegetable_kootu')">Recipe</button>
+                        <div id="vegetable_kootu" class="recipe-content"></div>
+                    </div>
+                    <div class="meal">
+                        <h3>Lemon Rice with Sundal and Buttermilk<br>
+                            <span class="nutrient-info">Calorie: 440 kcal | Protein: 10g | Fiber: 7g</span>
+                        </h3>
+                        <button onclick="showRecipe('lemon_rice')">Recipe</button>
+                        <div id="lemon_rice" class="recipe-content"></div>
+                    </div>
+                 </div>
+            </div>   
+        </section>
+
+        <section id="dinner" class="meal-section">
+            <div class="section-container">
+                <h2 class="section-title">Dinner</h2>
+                <div class="meal-container">
+                    <div class="meal">
+                        <h3>Roti & Vegetable Curry<br>
+                            <span class="nutrient-info">Calorie: 400 kcal | Protein: 10g | Fiber: 6g</span>
+                        </h3>
+                        <button onclick="showRecipe('roti')">Recipe</button>
+                        <div id="roti" class="recipe-content"></div>
+                    </div>
+                    <div class="meal">
+                        <h3>Chappati & Vegetable Curry<br>
+                            <span class="nutrient-info">Calorie: 400 kcal | Protein: 10g | Fiber: 6g</span>
+                        </h3>
+                        <button onclick="showRecipe('chapati')">Recipe</button>
+                        <div id="chapati" class="recipe-content"></div>
+                    </div>
+                    <div class="meal">
+                        <h3>Thakkali sadam or arisiparupu sadam<br>
+                            <span class="nutrient-info">Calorie: 390 kcal | Protein: 8g | Fiber: 6g</span>
+                        </h3>
+                        <button onclick="showRecipe('thakkali_sadam')">Recipe</button>
+                        <div id="thakkali_sadam" class="recipe-content"></div>
+                    </div>
+                    <div class="meal">
+                        <h3>Egg Kothu Chappathi with egg and onion<br>
+                            <span class="nutrient-info">Calorie: 400 kcal | Protein: 12g | Fiber: 6g</span>
+                        </h3>
+                        <button onclick="showRecipe('egg_kothu_parotta')">Recipe</button>
+                        <div id="egg_kothu_parotta" class="recipe-content"></div>
+                    </div>
+                    <div class="meal">
+                        <h3>Vegetable dosai (2pcs) with tomato chutney<br>
+                            <span class="nutrient-info">Calorie: 410 kcal | Protein: 9g | Fiber: 5g</span>
+                        </h3>
+                        <button onclick="showRecipe('vegetable_dosai')">Recipe</button>
+                        <div id="vegetable_dosai" class="recipe-content"></div>
+                    </div>
+                    <div class="meal">
+                        <h3>Grilled fish with Steamed vegetables<br>
+                            <span class="nutrient-info">Calorie: 400 kcal | Protein: 20g | Fiber: 6g</span>
+                        </h3>
+                        <button onclick="showRecipe('grilled_fish')">Recipe</button>
+                        <div id="grilled_fish" class="recipe-content"></div>
+                    </div>
+                    <div class="meal">
+                        <h3>Chicken chappathi roll<br>
+                            <span class="nutrient-info">Calorie: 430 kcal | Protein: 22g | Fiber: 6g</span>
+                        </h3>
+                        <button onclick="showRecipe('chicken_chappathi_roll')">Recipe</button>
+                        <div id="chicken_chappathi_roll" class="recipe-content"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="snack" class="meal-section">
+            <div class="section-container">
+                <h2 class="section-title">Snacks</h2>
+                <div class="meal-container">
+                    <div class="meal">
+                        <h3>Kollu Sundal<br>
+                            <span class="nutrient-info">Calorie: 100 kcal | Protein: 6g | Fiber: 5g</span>
+                        </h3>
+                        <button onclick="showRecipe('kollu_sundal')">Recipe</button>
+                        <div id="kollu_sundal" class="recipe-content"></div>
+                    </div>
+                    <div class="meal">
+                        <h3>Boiled egg with Pepper<br>
+                            <span class="nutrient-info">Calorie: 75 kcal | Protein: 6g | Fiber: 0g</span>
+                        </h3>
+                        <button onclick="showRecipe('boiled_egg')">Recipe</button>
+                        <div id="boiled_egg" class="recipe-content"></div>
+                    </div>
+                    <div class="meal">
+                        <h3>Butter milk(Neer mor)<br>
+                            <span class="nutrient-info">Calorie: 50 kcal | Protein: 3g | Fiber: 0g</span>
+                        </h3>
+                        <button onclick="showRecipe('buttermilk')">Recipe</button>
+                        <div id="buttermilk" class="recipe-content"></div>
+                    </div>
+                    <div class="meal">
+                        <h3>Vegetable Soup<br>
+                            <span class="nutrient-info">Calorie: 90 kcal | Protein: 5g | Fiber: 4g</span>
+                        </h3>
+                        <button onclick="showRecipe('vegetable_soup')">Recipe</button>
+                        <div id="vegetable_soup" class="recipe-content"></div>
+                    </div>
+                    <div class="meal">
+                        <h3>Masala Chana<br>
+                            <span class="nutrient-info">Calorie: 110 kcal | Protein: 7g | Fiber: 7g</span>
+                        </h3>
+                        <button onclick="showRecipe('masala_chana')">Recipe</button>
+                        <div id="masala_chana" class="recipe-content"></div>
+                    </div>
+                    <div class="meal">
+                        <h3>Fruit Salad<br>
+                            <span class="nutrient-info">Calorie: 90 kcal | Protein: 2g | Fiber: 6g</span>
+                        </h3>
+                        <button onclick="showRecipe('fruit_salad')">Recipe</button>
+                        <div id="fruit_salad" class="recipe-content"></div>
+                    </div>
+                    <div class="meal">
+                        <h3>Roasted Makhana<br>
+                            <span class="nutrient-info">Calorie: 70 kcal | Protein: 4g | Fiber: 4g</span>
+                        </h3>
+                        <button onclick="showRecipe('roasted_makhana')">Recipe</button>
+                        <div id="roasted_makhana" class="recipe-content"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="exercise" class="meal-section">
+            <div class="section-container">
+                <h2 class="section-title">Exercise Plan</h2>
+                <p>Exercise plan will come shortly.</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

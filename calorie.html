@@ -7,21 +7,70 @@
     <link rel="stylesheet" href="calorie.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Calorie Calculator</h1>
+    <header>
+        <h1>Cal-cal</h1>
+        <nav>
+            <li><a href="#" onclick="showSection('calorie-section')">Calorie Calculator</a></li>
+            <li><a href="#" onclick="showSection('protein-section')">Protein Calculator</a></li>
+            <li><a href="#" onclick="showSection('fat-section')">Fat Calculator</a></li>
+            <li><a href="#" onclick="showSection('fibre-section')">Fibre Calculator</a></li>
+        </nav>
+    </header>
 
-        <label for="food">Select Food:</label>
-        <select id="food" onchange="updateCalories()">
+    <!-- Calorie Section -->
+    <div class="container" id="calorie-section">
+        <h1><center>Calorie Calculator</center></h1>
+        <label for="food-calorie">Select Food:</label>
+        <select id="food-calorie" onchange="updateValues('calorie')">
             <option value="">--Select Food--</option>
         </select>
+        <label for="quantity-calorie">Enter Quantity:</label>
+        <input type="number" id="quantity-calorie" value="1" min="1" onchange="updateValues('calorie')">
+        <h3><center>Calories per item: <span id="calories-per-item">0</span> kcal</center></h3>
+        <h3><center>Total Calories: <span id="total-calories">0</span> kcal</center></h3>
+        <button onclick="calculateValues('calorie')">Calculate</button>
+    </div>
 
-        <label for="quantity">Enter Quantity:</label>
-        <input type="number" id="quantity" value="1" min="1" onchange="updateCalories()">
+    <!-- Protein Section -->
+    <div class="container" id="protein-section" style="display: none;">
+        <h1><center>Protein Calculator</center></h1>
+        <label for="food-protein">Select Food:</label>
+        <select id="food-protein" onchange="updateValues('protein')">
+            <option value="">--Select Food--</option>
+        </select>
+        <label for="quantity-protein">Enter Quantity:</label>
+        <input type="number" id="quantity-protein" value="1" min="1" onchange="updateValues('protein')">
+        <h3><center>Protein per item: <span id="protein-per-item">0</span> g</center></h3>
+        <h3><center>Total Protein: <span id="total-protein">0</span> g</center></h3>
+        <button onclick="calculateValues('protein')">Calculate</button>
+    </div>
 
-        <p>Calories per item: <span id="calories-per-item">0</span> kcal</p>
-        <p>Total Calories: <span id="total-calories">0</span> kcal</p>
+    <!-- Fat Section -->
+    <div class="container" id="fat-section" style="display: none;">
+        <h1><center>Fat Calculator</center></h1>
+        <label for="food-fat">Select Food:</label>
+        <select id="food-fat" onchange="updateValues('fat')">
+            <option value="">--Select Food--</option>
+        </select>
+        <label for="quantity-fat">Enter Quantity:</label>
+        <input type="number" id="quantity-fat" value="1" min="1" onchange="updateValues('fat')">
+        <h3><center>Fat per item: <span id="fat-per-item">0</span> g</center></h3>
+        <h3><center>Total Fat: <span id="total-fat">0</span> g</center></h3>
+        <button onclick="calculateValues('fat')">Calculate</button>
+    </div>
 
-        <button onclick="calculateCalories()">Calculate</button>
+    <!-- Fibre Section -->
+    <div class="container" id="fibre-section" style="display: none;">
+        <h1><center>Fibre Calculator</center></h1>
+        <label for="food-fibre">Select Food:</label>
+        <select id="food-fibre" onchange="updateValues('fibre')">
+            <option value="">--Select Food--</option>
+        </select>
+        <label for="quantity-fibre">Enter Quantity:</label>
+        <input type="number" id="quantity-fibre" value="1" min="1" onchange="updateValues('fibre')">
+        <h3><center>Fibre per item: <span id="fibre-per-item">0</span> g</center></h3>
+        <h3><center>Total Fibre: <span id="total-fibre">0</span> g</center></h3>
+        <button onclick="calculateValues('fibre')">Calculate</button>
     </div>
 
     <script src="calorie.js"></script>

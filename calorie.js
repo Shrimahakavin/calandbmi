@@ -44,3 +44,4 @@ function showSection(sectionId) {
         document.getElementById(section).style.display = (section === sectionId) ? 'block' : 'none';
     });
 }
+
